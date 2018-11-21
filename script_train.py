@@ -65,9 +65,8 @@ training_data, _, validation_data, _, _, _ = dataloader.create_split_data(chunk_
 training_data = train_utils.augment_data(training_data)
 
 # initialize the model
-if args.model == 'pitchrnn':
-    perf_model = PitchRnn()
-elif args.model == 'pitchcrnn':
+perf_model = PitchRnn()
+if args.model == 'pitchcrnn':
     perf_model = PitchCRnn()
 if CUDA_AVAILABLE:
     perf_model.cuda()
