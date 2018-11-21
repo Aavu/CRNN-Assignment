@@ -1,0 +1,1 @@
+{'x': [], 'loss_train': [], 'r_sq_train': [], 'acc_train': [], 'loss_val': [], 'r_sq_val': [], 'acc_val': []}
